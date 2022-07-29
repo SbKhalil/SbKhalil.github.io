@@ -1,0 +1,544 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+.header {
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/background2.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+nav {
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav img {
+	width: 250px;
+}
+
+.nav-links {
+	flex: 1;
+	text-align: right;
+}
+
+.nav-links ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+.nav-links ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.nav-links ul li::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+	width: 100%;
+}
+
+.text-mitte {
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.text-mitte h1 {
+	font-size: 72px;
+}
+
+.text-mitte p {
+	margin: 10px 0 40px;
+	font-size: 18px;
+	color: #fff;
+}
+
+.button {
+	display: inline-block;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 18px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.button:hover {
+	border: 1px solid;
+	background: #f44336;
+	transition: 1s;
+}
+
+@media(max-width: 700px) {
+	.text-mitte h1 {
+		font-size: 20px;
+	}
+
+	.nav-links ul li {
+		display: block;
+	}
+
+	.nav-links {
+		position: absolute;
+		background: #f44336;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: 0;
+		text-align: left;
+		z-index: 2;
+	}
+
+}
+
+/*-------- unterseite -------*/
+
+.unterseite {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.unterseite h1 {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.unterseite p {
+	display: flex;
+	color: #777;
+	font-size: 19px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+	text-align: center;
+}
+
+.reihe {
+	margin-top: 5%;
+	display: inline-flex;
+	justify-content: space-between;
+	word-break: break-all;
+}
+
+.unterseite-reihe {
+	flex-basis: 31%;
+	background: #fff3f3;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+
+.unterseite-reihe h3 {
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.unterseite-reihe:hover {
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.banner {
+	margin: 100px auto;
+	width: 80%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/banner.jpg);
+	background-position: center;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.banner h1 {
+	color: #fff;
+	margin-bottom: 40px;
+	padding: 0%;
+}
+
+/*-------- Fahrrader Unterseite -------*/
+
+.farrad {
+	min-height: auto;
+	width: 100%;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/background.JPG);
+	background-position: center;
+	border-radius: 10px padding auto;
+}
+
+/*-------- Fahrrader Auswahl -------*/
+
+.farrad-auswahl {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.farrad-auswahl h1 {
+	font-size: 50px;
+
+}
+
+
+.farrad-auswahl p {
+	color: rgb(58, 58, 58);
+	font-size: 23px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.auswahl-reihe {
+	display: inline;
+	margin-top: 80px;
+	flex-basis: 32%;
+	border-radius: 20px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+.auswahl-reihe img {
+	margin-top: 20px;
+	border: 1px solid transparent;
+	height: auto;
+	vertical-align: middle;
+	width: 300px;
+	height: 180px;
+	padding: 50px;
+}
+
+.layer {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	list-style-type: none;
+	margin-top: 20px;
+
+}
+
+.layer h3 {
+	margin-top: 150px;
+	width: 100%;
+	font-weight: 500;
+	font-size: 30px;
+	bottom: 0;
+	left: 50%;
+}
+
+.layer a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	border: 1px solid rgb(255, 255, 255);
+	border-color: black;
+	padding: 12px 34px;
+	background: #fff;
+	position: relative;
+}
+
+.layer a:hover {
+	border: 1px solid;
+	background: #dfbd4e;
+	transition: 1s;
+}
+
+
+/*-------- Mountainbike Unterseite -------*/
+
+.banner-mountain {
+	margin: 100px auto;
+	width: 90%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/mountainbanner.jpg);
+	background-position: center;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 0;
+	color: #fff;
+
+}
+
+.mountain {
+	text-align: left;
+	width: 22%;
+	margin-left: 70%;
+
+
+}
+
+
+.mountain p {
+	margin-top: 8%;
+	font-size: 20px;
+	display: inline-flex;
+	justify-content: space-between;
+	word-break: break-all;
+
+}
+
+.pro-reihe {
+	display: inline;
+	margin-top: 80px;
+	flex-basis: 32%;
+	border-radius: 20px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.lol img {
+
+	margin-top: 20px;
+	border: 1px solid #777;
+	background: rgb(204, 204, 204);
+	height: auto;
+	vertical-align: middle;
+	width: 300px;
+	height: 180px;
+	padding: 50px;
+
+
+
+
+}
+
+
+/*-------- Kontakt Seite -------*/
+
+.kontakt {
+	text-align: left;
+	margin-left: 60%;
+	padding: 50px;
+
+
+}
+
+.kontakt p {
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.kontakt h2 {
+	margin-top: 20px;
+}
+
+.karte img {
+	margin-top: -550px;
+	padding: 50px;
+
+}
+
+.offen {
+	margin-top: 19px;
+	border: 1px;
+	padding: 20px;
+	width: fit-content;
+	padding-right: 40%;
+	background-color: rgb(172, 255, 244);
+}
+
+.bye {
+	margin: 100px auto;
+	width: 90%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/bye.jpg);
+	background-position: center;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 0;
+	color: #fff;
+}
+
+
+
+
+
+/*-------- mountainbike unterseite liste, falsch benannt -------*/
+
+.angebote{
+	width: 80%;
+	padding: 5%;
+	width: fit-content;
+
+}
+.angebote img{
+	width: 10%;
+	display: inline;
+    float: left;
+	
+}
+
+.angebote ul {
+	padding-left: 0px;
+	background-color: #ffffff;
+	text-align: center;
+	position: relative;
+}
+
+.angebote ul li {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.angebote ul li:hover {
+	background-color: #e4dab0;
+}
+
+.angebote ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+.angebote p{
+	text-align: left;
+	margin-top: 19px;
+	margin-left: 20%;
+	padding: 20px;
+	padding-right: 40%;
+}
+
+/*-------- Kontakt Seite -------*/
+
+.extras{
+	width: 80%;
+	padding: 5%;
+	width: fit-content;
+
+}
+.extras img{
+	float: left;
+    width:  150px;
+    height: 150px;
+    object-fit: cover;	
+}
+
+.extras ul {
+	padding-left: 0px;
+	background-color: #ffffff;
+	text-align: center;
+	position: relative;
+}
+
+.extras ul li {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.extras ul li:hover {
+	background-color: #e4dab0;
+}
+
+.extras ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+.extras p{
+	text-align: left;
+	font-size: 19px;
+}
+
+
+.uschrift-extras{
+	text-align: left;
+	margin: 60px;
+	padding-left: 50px;
+}
+
+.uschrift-extras p{
+	font-size: 19px;
+}
+
+.abild{
+	margin: 100px auto;
+	width: 90%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/angebotebild.jpg);
+	background-position: center;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 0;
+	color: #fff;
+
+}
+
+
+/*-------- team -------*/
+.team{
+	width: 80%;
+	padding: 5%;
+	width: fit-content;
+
+}
+.team img{
+	float: left;
+    width:  150px;
+    height: 150px;
+    object-fit: cover;
+	border-radius: 30%;	
+}
+
+.team ul {
+	padding-left: 100px;
+	background-color: #ffffff;
+	text-align: center;
+	position: relative;
+}
+
+.team ul li {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.team h3{
+	text-align: left;
+	font-size: 18px;
+}
+
+.team p{
+	text-align: left;
+	font-size: 18px;
+}
+
+.unserTeam{
+	text-align: left;
+	padding-left: 210px;
+	margin-top: 80px;
+	position: relative;
+}
+
+.unsertext p{
+	text-align: left;
+	width: 30%;
+	padding-left: 210px;
+	margin-top: 5px;
+	position: relative;
+}
+}
